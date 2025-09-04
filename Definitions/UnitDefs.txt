@@ -1,0 +1,15 @@
+//playable units. arranged (mostly) by chapter appearance
+#define Noir 0x01
+#define Artemisia 0x02
+#define Cecil 0x03
+#define Hermes 0x04
+#define Maria 0x05
+#define Josephine 0x06
+#define Oliver 0x07
+#define Schwarze 0x0F
+#define William 0x21
+#define Blaise 0x23
+#define Argent 0x40
+
+//others
+#define Jaeger 0x24

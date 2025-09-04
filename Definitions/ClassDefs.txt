@@ -1,0 +1,7 @@
+//The only classes right now in this file are the ones that appear in chapter 1
+#define SchwarzeLord 0x01
+#define NoirLord 0x02
+#define JuggernautM 0x35
+#define HalberdierF 0x47
+#define FighterF 0x50
+#define Conqueror 0x79

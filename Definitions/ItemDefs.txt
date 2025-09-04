@@ -1,0 +1,3 @@
+//prfs only for now
+#define Gawain 0x09
+#define Seiken 0x78

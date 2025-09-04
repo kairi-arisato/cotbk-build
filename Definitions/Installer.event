@@ -1,0 +1,4 @@
+#include "UnitDefs.txt"
+#include "EnemyDefs.txt"
+#include "ClassDefs.txt"
+#include "ItemDefs.txt"
