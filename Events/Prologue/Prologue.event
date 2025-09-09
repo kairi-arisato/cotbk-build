@@ -48,6 +48,11 @@ END_MAIN
 Units1:
 UNIT Noir NoirLord 0x0 Level(1,Ally,0) [12,2] 0b 0x0 0x0 0x0 [Gawain] [0x0,0x0,0x0,0x0]
 UNIT Schwarze SchwarzeLord 0x0 Level(1,Ally,0) [11, 1] 0x0 0x0 0x0 0x0 [Seiken] [0x0,0x0,0x0,0x0]
+UNIT
+
+EnemyUnits:
+UNIT Velka WyvernRider_F 0x0 Level(3,Enemy,0) [1,8] DropItem 0x0 0x0 0x0 [Hatchet] NeverMoveAI
+UNIT
 
 Traps1:
 ENDTRAP
@@ -60,7 +65,9 @@ ALIGN 4
 BeginningScene:
 ENUT 0x1 //no more boss quotes
 ENUT 0x2 //no more death quotes
-LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+LOAD1 0x1 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+ENUN
+LOAD1 0x0 EnemyUnits
 ENUN
 ENDA
 

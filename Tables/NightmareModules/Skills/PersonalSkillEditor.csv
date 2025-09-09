@@ -1,12 +1,12 @@
 INLINE PersonalSkillTable,Skill
 None,0x0
-Eirika,CharismaID
-Seth,SaviorID
-Gilliam,RallyDefID
-Franz,SealStrID
-Moulder,RallyResID
-Vanessa,SpurSpdID
-Ross,ParagonID
+Noir,ChivalryID
+Artemisa,RepositionID
+Cecil,RallyDefID
+Hermes,SealStrID
+Maria,RallyResID
+Josephine,SpurSpdID
+Oliver,ParagonID
 Neimi,RallyLukID
 Colm,RallySpdID
 Garcia,ColossusID
@@ -14,7 +14,7 @@ Innes,BowRangeUpID
 Lute,ParagonID
 Natasha,SealLukID
 Cormag,RallyStrID
-Ephraim,InspirationID
+Schwarze,DartingBlowID
 Forde,SpurSpdID
 Kyle,SpurStrID
 Amelia,ParagonID

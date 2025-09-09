@@ -134,7 +134,7 @@
 
 // If uncommented, Leadership Stars will be implemented.
 // Go to LeadershipStars/LeadershipStars.event to edit settings.
-// #define LEADERSHIP_STARS
+#define LEADERSHIP_STARS
 
 // If uncommented, Biorhythm will be implemented.
 // Go to "Biorhythm/Biorhythm.event" to edit settings.
@@ -159,11 +159,11 @@
 
 //If uncommented, Status-Inflicting Weapons will be implemented.
 //Setting weapon effect 0xD will apply the effect ID at item data +0x22.
-// #define STATUS_WEAPONS
+#define STATUS_WEAPONS
 
 //If uncommented, Narrow Font will be implemented.
 //This allows for setting narrower text in addition to standard text.
-// #define NARROW_FONT
+//#define NARROW_FONT
 #ifdef NARROW_FONT
 MESSAGE NARROW_FONT is being phased out for UTF-8 encoded Narrow Font. 
 MESSAGE If you have added custom characters, you will need to add them in Root\EngineHacks\ExternalHacks\Fonts. 

@@ -2,3 +2,4 @@
 #include "EnemyDefs.txt"
 #include "ClassDefs.txt"
 #include "ItemDefs.txt"
+#include "ChapterDefs.txt"

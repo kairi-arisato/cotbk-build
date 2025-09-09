@@ -1,0 +1,5 @@
+//palette
+#define Fields4PaletteID 0x89
+
+//map animation
+#define Fields4AnimationID 0xCB

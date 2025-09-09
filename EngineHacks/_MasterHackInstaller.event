@@ -232,4 +232,10 @@ POP
 
   // Save/Suspend Expansion
     #include "Necessary/ExpandedModularSave/ExModularSave.event"
-
+  
+  //Text Engine Rework
+	#include "MorePatches/FE8-Text_Engine_Rework/_FE8-Text_Engine_Rework_EA.event"
+	
+	#include "MorePatches/ExtendWeaponDescBox/Installer.event"
+	
+	#include "MorePatches/ModularMinimugBox-master/Installers/MMBInstallerCatball_1.event"

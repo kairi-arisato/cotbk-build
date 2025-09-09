@@ -12,7 +12,6 @@
 
 
 
-
 ALIGN 4
 NewItemIcons:
 // Sheet with all icons goes here 
@@ -21,8 +20,6 @@ NewItemIcons:
 #define ItemIconEntry(ItemIconID) "ORG NewItemIcons + (ItemIconID*128)"
 
 #include "GeneratedInstaller.event"
-
-
 
 PUSH
 ORG $36B4

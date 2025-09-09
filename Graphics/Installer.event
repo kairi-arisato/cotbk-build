@@ -9,3 +9,5 @@
 //#include "Palettes/Palette Installer.event"
 
 #include "Animation/Master Animation Installer.txt"
+
+#include "Tileset_MapAnims/Tileset_AnimsInstaller.event"

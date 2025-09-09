@@ -1,0 +1,27 @@
+## NoirName
+Noir[X]
+
+## NoirDesc
+A highly skilled strategist and friend[n]
+of Schwarze, who cares deeply for her[n]
+allies. Her adapability is unmatched.[X]
+
+## SchwarzeName
+Schwarze[X]
+
+## SchwarzeDesc
+A devoted knight who commands a[n]
+military force along with Noir.[n]
+Has impressive skill and resolve.[X]
+
+## VelkaName
+Velka[X]
+
+## NormalVelkaDesc
+A mercenary who leads the siege on[n]
+Fort Sylem. In dire need of money.[X]
+
+## RuneVelkaDesc
+The power of the Rune of Embers[n]
+has eroded her personality,[n]
+but not her furious purpose.[X]
