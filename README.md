@@ -1,5 +1,6 @@
 
-# FE8 Skill System
+# cotbk-graphical overhaul
+A graphical overhaul(?) of Code of the Black Knights, a FE8 hack.
 
 [Main discussion on Fire Emblem Universe](https://feuniverse.us/t/fe8-skill-system-v1-0-254-skills-done-more-on-the-way/2312)
 
