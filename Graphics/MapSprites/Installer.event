@@ -1,33 +1,45 @@
-
-
 #include "Internals.event"
-#include "GeneratedInstaller.event"
+#include "Map_Sprite_Installer.event"
 
+//#include "GeneratedInstaller.event"
 
-//First free SMS is 107
-//#define Cavalier_M_Sword_SALVAGEDstand 107 
-//#define Soldier_F_Echoes_Lance_FireEmblemier_flasubanstand 108 
- 
- 
-//First free MMS is 127 and will show up if you've expanded classes.
-//#define Cavalier_M_Sword_SALVAGEDwalk 127 
-//#define Soldier_F_Echoes_Lance_FireEmblemier_flasubanwalk 128 
- 
+//sme's macros. i got it from #buildfile_help
+#define StandingMapSpriteTable 0x8AF880
+#define MovingMapSpriteTable 0x9A2E00 
 
+#define StandingMapSprite(aId, size, gfxPointer) "PUSH; ORG NewStandingMapSpriteTable + (aId * 8); SHORT 0 size; POIN gfxPointer; POP"
+#define MovingMapSprite(aId, apPointer, gfxPointer) "PUSH; ORG NewMovingMapSpriteTable + ((aId - 1) * 8); POIN gfxPointer apPointer; POP"
 
-//Copy from here 
-PUSH 
- 
-//SetSMS(Cavalier_M_Sword_SALVAGEDstand, 1, Cavalier_M_Sword_SALVAGEDstand_Data) 
-//SetSMS(Soldier_F_Echoes_Lance_FireEmblemier_flasubanstand, 0, Soldier_F_Echoes_Lance_FireEmblemier_flasubanstand_Data) 
- 
- 
-//SetMMS(Cavalier_M_Sword_SALVAGEDwalk, Cavalier_M_Sword_SALVAGEDwalk_Data, DemonKingAP) 
-//SetMMS(Soldier_F_Echoes_Lance_FireEmblemier_flasubanwalk, Soldier_F_Echoes_Lance_FireEmblemier_flasubanwalk_Data, DemonKingAP) 
- 
-POP 
-//Copy until here 
+#define MapSprite16x16 0
+#define MapSprite16x32 1
+#define MapSprite32x32 2
 
+PUSH
+ORG 0x9A8F74 //location of manakete attack map sprite palette; new palette by knabepicer
+BYTE 0x13 0x4F 0xA5 0x14 0x8D 0x53 0xF2 0x63 0xC1 0x21 0xE6 0x3A 0xE6 0x3A 0xAA 0x49 0x0E 0x4E 0x93 0x62 0x37 0x6B 0x99 0x7B 0xFE 0x7F 0x30 0x3A 0xFF 0x7F 0x1F 0x7C
+POP
 
+#define HalbMStand 107
+#define HalbFStand 108
+#define AxeWyvernStand 109
+#define AxeWyvernFStand 110
 
+//Standing map sprites
+StandingMapSprite(0x0,1,SchwarzeLordStanding)
+StandingMapSprite(0x1,0,NoirLordStanding)
+StandingMapSprite(0xB,0,MercFStanding)
+StandingMapSprite(0x41,1,FighterFStanding)
+StandingMapSprite(HalbMStand,1,HalbMStanding)
+StandingMapSprite(HalbFStand,1,HalbFStanding)
+StandingMapSprite(AxeWyvernStand,1,AxeWyvernStanding)
+StandingMapSprite(AxeWyvernFStand,1,AxeWyvernFStanding)
 
+//Moving map sprites
+MovingMapSprite(0x1,NormalAP,SchwarzeLordMoving)
+MovingMapSprite(0x2,RangerAP,NoirLordMoving)
+MovingMapSprite(0x10,ArcherAP,MercFMoving)
+MovingMapSprite(0x50,RangerAP,FighterFMoving)
+MovingMapSprite(0x37,NormalAP,HalbMMoving)
+MovingMapSprite(0x47,NormalAP,HalbFMoving)
+MovingMapSprite(0x3D,WyvernRiderAP,AxeWyvernMoving)
+MovingMapSprite(0x3E,WyvernRiderAP,AxeWyvernFMoving)

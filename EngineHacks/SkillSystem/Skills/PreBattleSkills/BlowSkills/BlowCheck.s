@@ -68,7 +68,7 @@ DartingSkill:
 ldr     r0,=0x203A4EC       @Move attacker data into r0.
 add     r0,#0x5E    @Move to the attacker's AS.
 ldrh    r3,[r0]     @Load the attacker's AS into r3.
-add     r3,#0x05    @Add 5 to the attacker's AS.
+add     r3,#0x06    @Add 6 to the attacker's AS.
 strh    r3,[r0]     @Store attacker AS.
 b       SkillReturn
 WardingSkill:

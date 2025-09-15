@@ -4,8 +4,10 @@ Gawain[X]
 # 0x374
 Seiken[X]
 
-# 0x40c ^
-Summons a piercing sword. +2 DEF. Eff: [ArmorIcon][X]
+# 0x40c
+Summons a piercing sword.[n]
++2 DEF. Eff: [ArmorIcon][X]
 
-# 0x424 ^
-Gifted to Schwarze upon knighting.[X]
+# 0x424
+Gifted to Schwarze upon[n]
+knighting. Eff: [ArmorIcon][X]

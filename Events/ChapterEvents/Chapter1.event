@@ -1,0 +1,277 @@
+EventPointerTable(0x7, PointerList)
+
+setText(0x160, NewChName)
+
+ALIGN 4
+NewChName:
+String("Ch1: A Tale of Sorrow")
+BYTE 0
+
+ALIGN 4
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1 //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventEnemy(0,PlayerUnitsMarked, 1)
+TurnEventPlayer(0,CecilandArtemisaJoin,3)
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+UNIT Noir NoirLord 0x0 Level(1,Ally,0) [12,0] 0b 0x0 0x1 REDA12R2 [Gawain,Flux,Vulnerary] NoAI
+UNIT Schwarze SchwarzeLord 0x0 Level(1,Ally,0) [13,0] 0x0 0x0 0x2 PrologueSchwarzeREDA [Seiken,IronBlade,Vulnerary] NoAI
+//UNIT WilliamCh1 Warrior 0x0 Level(10,Ally,0) [12,3] 0x0 0x0 0x0 0x0 [Nidhogg] NoAI
+UNIT
+
+EnemyUnits:
+UNIT Mercenary Fighter 0x0 Level(1,Enemy,0) [8,1] 0x0 0x0 0x0 0x0 [IronAxe] DefaultAI
+UNIT Mercenary Merc 0x0 Level(1,Enemy,0) [2,3] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Mercenary Fighter 0x0 Level(2,Enemy,1) [6,9] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+UNIT Mercenary MyrmF 0x0 Level(3,Enemy,0) [2,9] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Mercenary FighterF 0x0 Level(2,Enemy,0) [2,7] 0x0 0x0 0x0 0x0 [IronAxe] [0x00, 0x12, 0x00, 0x00]
+UNIT Mercenary MercF 0x0 Level(2,Enemy,0) [4,0] 0x0 0x0 0x0 0x0 [IronSword] DefaultAI
+UNIT Mercenary Myrm 0x0 Level(3,Enemy,1) [0,5] 0x0 0x0 0x0 0x0 [IronSword] [0x00, 0x06, 0x00, 0x00]
+UNIT Mercenary Mage 0x0 Level(2,Enemy,1) [4,9] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
+UNIT Mercenary Fighter 0x0 Level(2,Enemy,1) [11,9] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+UNIT Mercenary Myrm 0x0 Level(2,Enemy,1) [8,6] 0x0 0x0 0x0 0x0 [IronSword] [0x0C, 0x00, 0x00, 0x00]
+UNIT Mercenary MyrmF 0x0 Level(2,Enemy,1) [12,7] 0x0 0x0 0x0 0x0 [IronSword] [0x00, 0x06, 0x00, 0x00]
+UNIT Mercenary Fighter 0x0 Level(2,Enemy,1) [5,4] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+UNIT Mercenary ArcherF 0x0 Level(3,Enemy,1) [0,9] 0x0 0x0 0x0 0x0 [Longbow] NeverMoveAI
+UNIT Mercenary Merc 0x0 Level(2,Enemy,1) [6,6] 0x0 0x0 0x0 0x0 [IronBlade] AttackInRangeAI
+UNIT
+
+EnemyUnits2:
+UNIT Velka AxeWyvernF 0x0 Level(3,Enemy,0) [1,8] DropItem 0x0 0x0 0x0 [Hatchet] NeverMoveAI
+UNIT
+
+MapAllies1:
+UNIT KalmSoldierB Archer Schwarze Level(2,NPC,0) [13,0] 0x0 0x0 0x1 REDA10R3 [IronBow] [0x03,0x03,0x04,0x00]
+UNIT
+
+CutsceneUnits1A:
+UNIT 0x8e Thief 0x0 Level(1,Enemy,0) [12,3] 0x0 0x0 0x0 0x0 [IronSword] NoAI
+UNIT Mercenary Merc 0x0 Level(1,Enemy,0) [4,4] 0x0 0x0 0x0 0x0 [IronSword] NoAI
+UNIT LeadMercB Merc 0x0 Level(1,Enemy,0) [2,2] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] NoAI
+UNIT LeadMercB Fighter 0x0 Level(1,Enemy,0) [8,5] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] NoAI
+UNIT LeadMercB Soldier 0x0 Level(1,Enemy,0) [12,1] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] NoAI
+UNIT LeadMercB Archer 0x0 Level(1,Enemy,0) [2,6] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] NoAI
+UNIT RenaisCivilian Knight 0x0 Level(1,Enemy,0) [10,2] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] NoAI
+UNIT
+
+CutsceneUnits1B: //Maria, Artemisa, Josephine, and Cecil are NPCs for convenience.
+UNIT Noir NoirLord 0x0 Level(1,Ally,0) [5,0] 0x0 0x0 0x1 REDA5R2 [Gawain,Flux,Vulnerary] NoAI
+UNIT Schwarze SchwarzeLord 0x0 Level(1,Ally,0) [5,0] 0x0 0x0 0x1 REDA4R2 [Seiken,IronBlade,Vulnerary] NoAI
+UNIT Cecil Cav 0x0 Level(2,NPC,0) [6,0] 0x0 0x0 0x1 REDA6R2 [IronLance,Javelin,Axereaver,Vulnerary] NoAI
+UNIT Maria FighterF 0x0 Level(3,NPC,0) [8,0] 0x0 0x0 0x2 PrologueMariaREDA [SteelAxe,HandAxe] NoAI
+UNIT KalmSoldierA Paladin 0x0 Level(1,NPC,0) [6,0] 0x0 0x0 0x1 REDA4R3 [SilverLance] NoAI
+UNIT Hermes AxeWyvern 0x0 Level(3,NPC,0) [8,0] 0x0 0x0 0x1 REDA8R3 [IronAxe,SteelLance,Vulnerary] NoAI
+UNIT Artemisa HalberdierF 0x0 Level(1,NPC,0) [3,0] 0x0 0x0 0x1 REDA3R2 [SteelLance,SilverLance,Elixir] NoAI
+UNIT RenaisCivilian General 0x0 Level(1,NPC,0) [6,0] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] NoAI
+UNIT RenaisCivilian Cav 0x0 Level(1,NPC,0) [6,0] 0x0 0x0 0x1 REDA8R2 [0x0,0x0,0x0,0x0] NoAI
+UNIT RenaisCivilian Archer 0x0 Level(1,NPC,0) [6,0] 0x0 0x0 0x1 REDA7R2 [0x0,0x0,0x0,0x0] NoAI
+UNIT
+
+CutsceneUnits1C:
+UNIT LeadMercB Soldier 0x0 Level(1,Enemy,0) [13,0] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] NoAI
+UNIT LeadMercB Soldier 0x0 Level(1,Enemy,0) [11,0] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] NoAI
+UNIT
+
+CecilJoins:
+UNIT Cecil Cav 0x0 Level(2,Ally,0) [12,0] 0x0 0x0 0x0 0x0 [IronLance,Javelin,Axereaver,Vulnerary] NoAI
+UNIT
+
+ArtemisaJoins:
+UNIT Artemisa HalberdierF 0x0 Level(1,Ally,0) [14,8] 0x0 0x0 0x1 REDA14R9 [SteelLance,SilverLance,Elixir] NoAI
+UNIT
+
+JaegerSpawns:
+UNIT Jaeger WyvernLord 0x0 Level(18,NPC,0) [14,3] 0x0 0x0 0x0 0x0 [Vidofnir] NoAI
+UNIT
+
+/* I'm just testing if these work.
+AdamWarpsIn:
+UNIT AdamCh1 Sage 0x0 Level(10,NPC,0) [6,8] 0x0 0x0 0x0 0x0 [Aura] DefaultAI
+UNIT
+LilliaWarpsIn:
+UNIT Lillia Mother 0x0 Level(10,NPC,0) [7,7] 0x0 0x0 0x0 0x0 [Aura, Warp] DefaultAI
+UNIT
+*/
+
+Traps1:
+IronBallista(10,3)
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+LOMA 0x45 //First part of cutscene
+LOAD1 0 CutsceneUnits1A
+ENUN
+FADU 16
+LOAD1 0 CutsceneUnits1B
+ENUN
+StartBattle
+CriticalHit(0,99)
+EndAttack
+FIGHT_MAP KalmSoldierA Mercenary KillerLance False
+LOAD1 0 CutsceneUnits1C
+Text(SchwarzeRemarksonReinforcements)
+MOVE 15 Maria [11,4]
+MOVE 15 Hermes [11,3]
+ENUN
+StartBattle
+NormalDamage(0,15)
+MissedAttack(1,0)
+MissedAttack(0,15)
+EndAttack
+FIGHT_MAP Maria 0x8e HandAxe False
+StartBattle
+NormalDamage(0,15)
+EndAttack
+FIGHT_MAP Hermes 0x8e IronAxe False
+MOVE 15 Maria [15,3]
+MOVE 15 Hermes [15,3]
+ENUN
+Text(ReinforcementsChaseMariaHermes)
+MoveByCoords(30, 12, 1, 15, 1)
+MoveByCoords(30, 13, 0, 15, 1)
+MoveByCoords(30, 11, 0, 15, 1)
+ENUN
+STAL 60
+Text(NoirAppointsCecil)
+MOVE 15 Noir [0,4]
+MOVE 15 Schwarze [0,5]
+MOVE 15 Cecil [6,3]
+ENUN
+MoveByCoords(30, 4, 3, 3, 3)
+MoveByCoords(30, 7, 2, 6, 2)
+ENUN
+STAL 60
+FADI 16
+REMOVEALL_BLUE
+REMOVEALL_GREEN
+REMOVEALL_RED
+EVBIT_T 4
+FADU 60
+LOMA 0x00 //Main event
+LOAD1 1 EnemyUnits
+ENUN
+LOAD1 1 EnemyUnits2
+ENUN
+CALL 0x08591F40 //For some reason, there are TWO fade ins here, even though I've set them exactly how the original hack did it. If I remove this, the REDAs don't work. If I add it, it looks really weird. I will fix this later.
+LOAD1 1 Units1
+ENUN
+LOAD1 1 MapAllies1
+ENUN
+CURSOR [10,3]
+STAL 60
+REMOVE_CURSORS
+Text(KalmiteHelps)
+CURSOR Noir
+STAL 60
+REMOVE_CURSORS
+TEXTSTART
+TEXTSHOW NoirRemarksonVillages
+TEXTEND
+CURSOR_FLASHING [1,2]
+STAL 60
+REMOVE_CURSORS
+CURSOR_FLASHING [14,8]
+STAL 60
+REMOVE_CURSORS
+TEXTCONT
+TEXTEND
+REMA
+NoFade
+ENDA
+
+PlayerUnitsMarked:
+CAMERA_CENTERED Velka
+CURSOR Velka
+STAL 60
+REMOVE_CURSORS
+Text(PlayerUnitsMarkedText)
+NoFade
+ENDA
+
+CecilandArtemisaJoin:
+CAMERA_CENTERED Noir
+CURSOR Noir
+STAL 60
+REMOVE_CURSORS
+SetBackground(0x1D)
+Text(SchwarzeTalksTerrain)
+EndConvo
+TorchEffect
+SetBackground(0x24)
+Text(CecilJoinsText)
+EndConvo
+LOAD1 1 CecilJoins
+CURSOR Cecil
+STAL 60
+REMOVE_CURSORS
+CURSOR [14,8]
+STAL 60
+REMOVE_CURSORS
+SetBackground(0x5)
+TEXTSTART
+TEXTSHOW ArtemisaJoinsText
+TEXTEND
+SOUN 0xD2
+STAL 30
+TEXTCONT
+TEXTEND
+SOUN 0xD5
+STAL 30
+TEXTCONT
+TEXTEND
+REMA
+EndConvo
+LOAD1 1 ArtemisaJoins
+ENUN
+CURSOR Artemisa
+STAL 60
+REMOVE_CURSORS
+NoFade
+ENDA
+
+EndingScene:
+//ASMC 0x85C71 0x381F5 0x37CF9 //show records screen
+STAL 120
+EVBIT_F 0x2
+MNTS 0x1 //return to title screen
+NoFade
+ENDA

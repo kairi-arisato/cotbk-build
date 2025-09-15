@@ -1,3 +1,4 @@
 //prfs only for now
 #define Gawain 0x09
+#define GratiaPlena 0x0A
 #define Seiken 0x78

@@ -54,7 +54,7 @@ Rogue,3,25,26,3
 Gorgon Egg,0,0,30,0
 Great Knight,0,0,21,0
 Great Knight (F),0,0,21,0
-Recruit (2),0,0,20,0
+Halberdier,0,0,20,0
 Journeyman (3),0,0,22,0
 Pupil (3),5,55,29,2
 Recruit (3),0,0,23,0
@@ -70,7 +70,7 @@ Berserker,0,0,21,0
 Monk,1,30,20,0
 Priest,1,30,20,0
 Bard,1,45,20,0
-Recruit (1),0,0,20,0
+Halberdier (F),0,0,20,0
 Pegasus Knight,1,10,20,0
 Falcon Knight,3,30,23,3
 Cleric,1,30,20,0
@@ -79,7 +79,7 @@ Valkyrie,4,35,25,2
 Dancer,1,45,20,0
 Soldier,0,0,20,0
 Necromancer,9,55,30,0
-Fleet,0,0,20,0
+Fighter (F),0,0,20,0
 Phantom,0,0,20,0
 Revenant,0,0,20,0
 Entombed,0,0,21,0

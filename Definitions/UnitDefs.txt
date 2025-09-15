@@ -1,6 +1,6 @@
 //playable units. arranged (mostly) by chapter appearance
 #define Noir 0x01
-#define Artemisia 0x02
+#define Artemisa 0x02
 #define Cecil 0x03
 #define Hermes 0x04
 #define Maria 0x05
@@ -12,4 +12,7 @@
 #define Argent 0x40
 
 //others
+#define WilliamCh1 0x67
 #define Jaeger 0x24
+#define KalmSoldierA 0x85
+#define KalmSoldierB 0x86

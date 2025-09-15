@@ -1,0 +1,15 @@
+//Move unit at specified coordinate
+//Credit Pikmin1211
+#define MoveByCoords(speed, srcX, srcY, destX, destY) "SVAL sB srcX|(srcY<<16); MOVE speed UnitAtCoordsSlotB [destX, destY]"
+//Generic always event macro
+#define AlwaysEvent(completionFlag, eventOffset, triggerFlag) "AFEV completionFlag eventOffset triggerFlag"
+
+#define ShowMap "CALL 0x8592140"
+
+#define EndConvo "CALL 0x09EE2C4"
+
+//////////Torch effect
+BYTE $40 $0D $00 $00 $FD $5B $08 $08
+
+#define TorchEffect "ASMC 0x08085BFD"
+/////////

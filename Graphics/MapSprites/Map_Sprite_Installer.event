@@ -1,0 +1,63 @@
+ALIGN 4
+HalbMStanding:
+#incbin "dmp/halb_m_standing.dmp"
+
+ALIGN 4
+HalbMMoving:
+#incbin "dmp/halb_m_walking.dmp"
+
+ALIGN 4
+HalbFStanding:
+#incbin "dmp/halb_f_standing.dmp"
+
+ALIGN 4
+HalbFMoving:
+#incbin "dmp/halb_f_walking.dmp"
+
+ALIGN 4
+NoirLordStanding:
+#incbin "dmp/noirlord_standing.dmp"
+
+ALIGN 4
+NoirLordMoving:
+#incbin "dmp/noirlord_walking.dmp"
+
+ALIGN 4
+SchwarzeLordStanding:
+#incbin "dmp/schwarzelord_standing.dmp"
+
+ALIGN 4
+SchwarzeLordMoving:
+#incbin "dmp/schwarzelord_walking.dmp"
+
+ALIGN 4
+FighterFStanding:
+#incbin "dmp/fighter_f_standing.dmp"
+
+ALIGN 4
+FighterFMoving:
+#incbin "dmp/fighter_f_walking.dmp"
+
+ALIGN 4
+MercFStanding:
+#incbin "dmp/merc_f_standing.dmp"
+
+ALIGN 4
+MercFMoving:
+#incbin "dmp/merc_f_walking.dmp"
+
+ALIGN 4
+AxeWyvernStanding:
+#incbin "dmp/Wyvern_Rider_M_Axe_flasuban_stand.dmp"
+
+ALIGN 4
+AxeWyvernMoving:
+#incbin "dmp/Wyvern_Rider_M_Axe_flasuban_walk.dmp"
+
+ALIGN 4
+AxeWyvernFStanding:
+#incbin "dmp/Wyvern_Rider_M_Axe_flasuban_stand.dmp"
+
+ALIGN 4
+AxeWyvernFMoving:
+#incbin "dmp/Wyvern_Rider_F_Axe_flasuban_walk.dmp"

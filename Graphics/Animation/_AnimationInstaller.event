@@ -1,0 +1,7 @@
+{
+#include "schwarze_lord/schwarze_swd/Sword Installer.event"
+#include "schwarze_lord/schwarze_item/Unarmed Installer.event"
+}
+{
+#include "noir_lord/noir_dark/Dark Installer.event"
+}

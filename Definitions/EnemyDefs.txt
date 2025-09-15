@@ -2,9 +2,10 @@
 #define Velka 0x68
 #define RuneVelka 0x69
 #define Lillia 0x43
-#define AdamPrologue 0x45
+#define AdamCh1 0x45
 
 //generics
-#define Merc 0x82
-#define LeadMerc 0x83
+#define Mercenary 0x82
+#define LeadMercA 0x81
+#define LeadMercB 0x83
 #define MinorArcana 0x84

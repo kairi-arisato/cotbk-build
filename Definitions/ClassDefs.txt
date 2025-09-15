@@ -1,7 +1,18 @@
 //The only classes right now in this file are the ones that appear in chapter 1
 #define SchwarzeLord 0x01
 #define NoirLord 0x02
+#define Cav 0x05
+#define CavF 0x06
+#define Merc 0x0F
+#define MercF 0x10
+#define Myrm 0x13
+#define MyrmF 0x14
+#define ArcherF 0x1A
 #define JuggernautM 0x35
+#define HalberdierM 0x37
 #define HalberdierF 0x47
 #define FighterF 0x50
+#define Mother 0x2C
+#define AxeWyvern 0x3D
+#define AxeWyvernF 0x3E
 #define Conqueror 0x79

@@ -271,7 +271,7 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 #define DRAGON_VEIN_SKILL_REQUIRED
 
 //If commented, Heroes Movement skills will use class checks and will not require their respective skills. Configure lists for each skill in 'SkillSystem/Skills/UnitMenuSkills/HeroesMovement/HeroesMovement.event', at the bottom of the file.
-//#define HEROES_MOVEMENT_SKILL_REQUIRED
+#define HEROES_MOVEMENT_SKILL_REQUIRED
 
 // If uncommented, the Charge mechanic will be disabled and Moonbow will use a skill% activation rate. This will not change Moonbow's description.
 // #define DISABLE_CHARGE
@@ -371,7 +371,7 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 
 //If true, Fixed Growths mode will exist.
 // Note: this takes promotion level into account, but does not take stat boosters into account 
-#define FIXED_GROWTHS_MODE False
+#define FIXED_GROWTHS_MODE True
 
 //ID of flag to use for fixed growths mode, if enabled (also works if flag here is defined as 0)
 #define FIXED_GROWTHS_FLAG_ID 0xEF
@@ -390,7 +390,7 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 #define PREVENT_WHEN_ABOVE_AVERAGE_BY_AMOUNT 5 
 
 //If true, passive growth boosters and metis tome will not affect growths in fixed growths mode.
-#define FIXED_GROWTHS_DONT_BOOST True
+#define FIXED_GROWTHS_DONT_BOOST False
 
 //If true, enemy/NPC autolevels will use fixed growths as well.
 #define ENEMY_NPC_FIXED_GROWTHS True

@@ -1,0 +1,6 @@
+To-do (Chapter 1 data only)
+	- Set battle animations for Schwarze, Noir - DONE
+	- Set magic animations for Gawain
+	- Set portraits for everyone
+	- Do the eventing for the entire chapter //START EVENT DONE.
+	- fix the leadership star icon

@@ -3,3 +3,4 @@
 #include "ClassDefs.txt"
 #include "ItemDefs.txt"
 #include "ChapterDefs.txt"
+#include "Macros.txt"

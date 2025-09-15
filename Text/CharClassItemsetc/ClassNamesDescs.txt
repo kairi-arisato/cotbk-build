@@ -11,3 +11,16 @@ Lord[X]
 ## SchwarzeLordDesc
 A honorable knight who fights[n]
 for justice. [SwordIcon][X]
+
+//No wyvern rider name.
+
+## AxeWyvernDesc
+High-flying knights vulnerable[n]
+only to bows and magic. [AxeIcon][X]
+
+## HalberdierName
+Halberdier[X]
+
+## HalberdierDesc
+Distinctive spear masters known for[n]
+their deadly, balanced technique. [LanceIcon][X]

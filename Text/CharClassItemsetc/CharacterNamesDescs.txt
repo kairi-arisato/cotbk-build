@@ -14,6 +14,59 @@ A devoted knight who commands a[n]
 military force along with Noir.[n]
 Has impressive skill and resolve.[X]
 
+## ArtemisaName
+Artemisa[X]
+
+## ArtemisaDesc
+A veteran captain and Schwarze's[n]
+mentor. Willing to do anything to[n]
+protect her family and her men.[X]
+
+## CecilName
+Cecil[X]
+
+## CecilDesc
+An elite knight and younger brother of[N]
+Noir. His appearance and awkwardness[n]
+hide talent and a kind heart.[X]
+
+## HermesName
+Hermes[X]
+
+## HermesDesc
+A wyvern rider from Kalm who strives to[N]
+surpass Schwarze. He gets no respect.[X]
+
+## MariaName
+Maria[X]
+
+## MariaDesc
+A pretty lady who loves to fight.[N]
+She's with the Holy Knights.[X]
+
+## JosephineName
+Josephine[X]
+
+## JosephineDesc
+A sophisticated noble, Maria's[n]
+friend, and a Holy Knight, this[n]
+stoic woman has a sharp tongue.[X]
+
+## WilliamName
+William[X]
+
+## WilliamDesc
+An expert hunter from the Llys[n]
+tribe. Skilled and overconfident,[n]
+but ultimately kind and friendly.[X]
+
+## JaegerName
+Jaeger[X]
+
+## JaegerDesc
+The most powerful knight in all of Kalm.[N]
+His bond with his wyvern strengthens him.[X]
+
 ## VelkaName
 Velka[X]
 
@@ -25,3 +78,44 @@ Fort Sylem. In dire need of money.[X]
 The power of the Rune of Embers[n]
 has eroded her personality,[n]
 but not her furious purpose.[X]
+
+## KalmName
+Kalm[X]
+
+## KalmDesc
+A soldier of the Holy Kingdom of[n]
+Kalm, known for its adaptability.[X]
+
+## ZoylaMercName
+Mercenary[X]
+
+## ZoylaMercDesc
+A sellsword apparently[n]
+employed by Zoyla.[X]
+
+## LeadMercDesc
+A particularly strong[n]
+mercenary. Be careful.[X]
+
+## MinorArcanaName ^
+Minor Arcana[X]
+
+## MinorArcanaDesc
+A lesser reanimate that forms[n]
+the ranks of the Arcana Horde.[X]
+
+## LilliaName
+Lillia[X]
+
+## LilliaDesc
+A High Priestess serving God. One[n]
+of Vert's Four Generals. Devoted,[n]
+and proficient in warp magic.[X]
+
+## AdamName
+Adam[X]
+
+## AdamCh1Desc
+The Third King of Kalm and an[n]
+outstanding magic user. His[n]
+father recently passed away.[X]
