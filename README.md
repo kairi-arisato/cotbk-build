@@ -1,6 +1,6 @@
 
-# cotbk-graphical overhaul
-A graphical overhaul(?) of Code of the Black Knights, a FE8 hack.
+# cotbk-buildfile
+A bugfix of Code of the Black Knights, a FE8 hack.
 
 [Code of the Black Knights main discussion on FEU](https://feuniverse.us/t/fire-emblem-code-of-the-black-knights-decisive-edition-30-chapters/6949)
 [Skillsys main discussion on Fire Emblem Universe](https://feuniverse.us/t/fe8-skill-system-v1-0-254-skills-done-more-on-the-way/2312)
