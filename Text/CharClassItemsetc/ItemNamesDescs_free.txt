@@ -1,0 +1,35 @@
+## MeteorName
+Meteor[X]
+
+## MeteorDesc
+Well-balanced, long-range fire spell.[X]
+
+## BlizzardName
+Blizzard[X]
+
+## BlizzardDesc
+Low power, but absurd range. Eff: [FlierIcon][X]
+
+## PrismaName
+Prisma[X]
+
+## PrismaDesc ^
++1 to all stats except HP/Mov/Con. Skill%[n]
+chance to inflict random status effect.[X]
+
+## AvalonEXName
+Avalon EX[X]
+
+## AvalonEXDesc
+Powered by a friend's soul...[n]
++5 to STR/MAG/SKL/SPD/LUK, +9 to[n]
+DEF, +8 to RES. Eff: [HorseIcon][ArmorIcon][X]
+
+## KnellTypeIIName
+Knell Type-II[X]
+
+## KnellTypeIIDesc
+Powered by a friend's soul...[n]
++5 to STR/SKL/SPD/DEF/LUK, +7 to[n]
+RES/MAG. Eff: [HorseIcon][ArmorIcon][X]
+

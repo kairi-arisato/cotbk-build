@@ -61,3 +61,11 @@ AxeWyvernFStanding:
 ALIGN 4
 AxeWyvernFMoving:
 #incbin "dmp/Wyvern_Rider_F_Axe_flasuban_walk.dmp"
+
+ALIGN 4
+DragonheartStanding:
+#incbin "dmp/dragonheart_stand.dmp"
+
+ALIGN 4
+DragonheartWalking:
+#incbin "dmp/dragonheart_walking.dmp"

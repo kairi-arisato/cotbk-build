@@ -2,6 +2,7 @@
  
 #define BlankIcon 222 
 #define Scythe_By_BeansyIcon 223 
+#define StarIcon 202
 
 
 
@@ -18,6 +19,7 @@ NewItemIcons:
 #incbin "dmp/vanilla_icons.dmp" // Expanded to 255 icons. 
 
 #define ItemIconEntry(ItemIconID) "ORG NewItemIcons + (ItemIconID*128)"
+
 
 #include "GeneratedInstaller.event"
 

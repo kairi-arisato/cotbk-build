@@ -1,6 +1,18 @@
-To-do (Chapter 1 data only)
-	- Set battle animations for Schwarze, Noir - DONE
-	- Set magic animations for Gawain
+To-do - Chapter 1
 	- Set portraits for everyone
-	- Do the eventing for the entire chapter //START EVENT DONE.
+	- Set battle animations for everyone
+	- Do the eventing for the entire chapter; PRORITIZE GAMEPLAY OVER TEXT
+		- Second phase in progress
+			- Fix the background fading out incorrectly.
+	- FIX THE ENDING EVENT.
+	- Find a way to check if William is in range.
+	- Find a way to remove Avalon EX, Knell Type-II, and Giantsfeller from the player's inventory.
+		- This is a patch in FEBuilder, but I don't know how to import it.
+	
+DONE:
+	- Set battle animations for Schwarze, Noir
+	- Set magic animations for Gawain
 	- fix the leadership star icon
+	- Find a way to make "Waiting for current player unit in current position"; make the red screen fade work
+	- Start event done.
+	- Villages done. Global flag that sets Kayleth isn't.

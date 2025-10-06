@@ -1,3 +1,11 @@
+//ChapterIDs
+#define AllChapters 0xFF
+#define Chapter1 0x00
+
+//flags
+#define DebugFlag 0xEC
+#define KaylethVisitedCh1Flag 0x12B
+
 //palette
 #define Fields4PaletteID 0x89
 

@@ -11,17 +11,17 @@
 #define SetIcon(ID) "ORG IconTable + ID * 128"
 
 AllyStarHitBonus:
-BYTE 5
+BYTE 4
 AllyStarAvoidBonus:
 BYTE 3
 
 EnemyStarHitBonus:
-BYTE 5
+BYTE 4
 EnemyStarAvoidBonus:
 BYTE 3
 
 NPCStarHitBonus:
-BYTE 5
+BYTE 4
 NPCStarAvoidBonus:
 BYTE 3
 

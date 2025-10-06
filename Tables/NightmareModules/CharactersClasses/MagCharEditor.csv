@@ -1,12 +1,12 @@
 INLINE MagCharTable,Base Magic,Magic Growth
 None,0,0
 Noir,0,45
-Artemisa,2,10
-Cecil,0,5
-Hermes,1,10
-Maria,3,40
+Artemisa,2,15
+Cecil,0,15
+Hermes,1,15
+Maria,3,15
 Josephine,2,25
-Oliver,0,5
+Oliver,0,60
 0x08 Neimi,2,15
 0x09 Colm,1,10
 0x0A Garcia,0,5
@@ -14,7 +14,7 @@ Oliver,0,5
 0x0C Lute,5,65
 0x0D Natasha,1,60
 0x0E Cormag,0,5
-Schwarze,0,15
+Schwarze,0,30
 0x10 Forde,1,10
 0x11 Kyle,0,10
 0x12 Amelia,2,25
@@ -134,8 +134,8 @@ Lead Mercenary B,3,0
 Minor Arcana,0,0
 Kalmite Soldier A,0,0
 Kalmite Soldier B,0,0
-0x87 -,0,0
-0x88 -,0,0
+Commander A,2,20
+Commander B,5,35
 0x89 Grado (Duessel's),0,0
 0x8A Grado (Duessel's),0,0
 0x8B Grado (Duessel's),0,0

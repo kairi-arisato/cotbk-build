@@ -13,3 +13,10 @@ BYTE $40 $0D $00 $00 $FD $5B $08 $08
 
 #define TorchEffect "ASMC 0x08085BFD"
 /////////
+
+#define GiveItem(Item,Character) "CALL $591F40; SVAL 0x3 Item ; GIVEITEMTO Character"
+
+
+#define PlayerInRange "CALL CheckIfPlayerInRange"
+#define NPCInRange "SVAL r2 1; CALL 0x89EE1B8" 
+#define EnemyInRange "SVAL r2 2; CALL 0x89EE1B8" 

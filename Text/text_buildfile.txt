@@ -124,6 +124,9 @@ a skill when used.[X]
 
 #include "ChapterTextInstaller.txt"
 
+#include "CharClassItemsetc/ItemNamesDescs_free.txt"
+
 #include "CharClassItemsetc/CharacterNamesDescs.txt"
 
 #include "CharClassItemsetc/ClassNamesDescs.txt"
+

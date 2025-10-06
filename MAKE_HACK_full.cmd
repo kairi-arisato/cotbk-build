@@ -10,9 +10,9 @@ set "source_rom=%~dp0FE8_clean.gba"
 
 set "main_event=%~dp0ROMBuildfile.event"
 
-set "target_rom=%~dp0cotbkgo.gba"
-set "target_ups=%~dp0cotbkgo.ups"
-set "target_sym=%~dp0cotbkgo.sym"
+set "target_rom=%~dp0cotbk-e.gba"
+set "target_ups=%~dp0cotbk-e.ups"
+set "target_sym=%~dp0cotbk-e.sym"
 
 @rem defining tools
 

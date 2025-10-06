@@ -44,7 +44,7 @@ ItemEffectivenessPtr(Vidofnir, SacredWeaponEffectiveness)
 ItemEffectivenessPtr(Audhulma, SacredWeaponEffectiveness)
 ItemEffectivenessPtr(Siegmund, SacredWeaponEffectiveness)
 ItemEffectivenessPtr(Garm, SacredWeaponEffectiveness)
-ItemEffectivenessPtr(Nidhogg, FlierAndMonster2)
+ItemEffectivenessPtr(Giantsfeller, FlierAndArmor)
 ItemEffectivenessPtr(HeavySpear, ArmorEffectiveness)
 ItemEffectivenessPtr(WindSword, FlierEffectiveness)
 ItemEffectivenessPtr(Dragonstone, MonsterEffectiveness)
@@ -81,9 +81,9 @@ WORD 0
 FlierAndMonster1: //Beacon bow
 SetWeaponEffectiveness(FlierType|MonsterType, 6)
 WORD 0
-FlierAndMonster2: //Nidhogg
+FlierAndArmor: //Giantsfeller
 SetWeaponEffectiveness(FlierType, 6)
-SetWeaponEffectiveness(MonsterType, 4)
+SetWeaponEffectiveness(ArmorType, 6)
 WORD 0
 //Used with Dragz's Effectiveness Items
 /*

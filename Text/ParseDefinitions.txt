@@ -50,7 +50,21 @@
 [......v.] = [FarRight]
 [.......v] = [FarFarRight]
 
+[ML] = [MidLeft]
+[MR] = [MidRight]
+[L] = [Left]
+[R] = [Right]
+[FL] = [FarLeft]
+[FR] = [FarRight]
+[FFL] = [FarFarLeft]
+[FFR] = [FarFarRight]
+
+[CF] = [ClearFace]
+
+////////////////////////////////////////////////
+//PORTRAITS:
 [CurrentPortrait] = [0xFF][0xFF]
+[LoadCurrentPortrait] = [LoadFace][0xFF][0xFF]
 
 [LoadInnes] = [LoadFace][0xf][0x1]
 [LoadCormag] = [LoadFace][0x13][0x1]
@@ -69,6 +83,15 @@
 [LoadCecil] = [LoadFace][0x5][0x1]
 [LoadHermes] = [LoadFace][0x6][0x1]
 [LoadMaria] = [LoadFace][0x7][0x1]
+[LoadVelka] = [LoadFace][0x30][0x1]
+[LoadRuneVelka] = [LoadFace][0x4B][0x1]
+[LoadAdam] = [LoadFace][0x42][0x1]
+[LoadWilliam] = [LoadFace][0x2B][0x1]
+
+[LoadPlaceholder] = [LoadFace][0xAC][0x1]
+[LoadPlaceholder2] = [LoadFace][0xAB][0x1]
+//
+/////////////////////////////////////////////////
 
 [period] = [0xDE][0x82]
 [dquote] = [0xDE][0x83]

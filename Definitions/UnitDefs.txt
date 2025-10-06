@@ -14,5 +14,3 @@
 //others
 #define WilliamCh1 0x67
 #define Jaeger 0x24
-#define KalmSoldierA 0x85
-#define KalmSoldierB 0x86

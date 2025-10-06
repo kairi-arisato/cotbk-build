@@ -23,4 +23,7 @@ ItemIconEntry(BlankIcon)
 ItemIconEntry(Scythe_By_BeansyIcon) 
 #incbin "dmp/Scythe_By_Beansy.dmp" 
  
+ItemIconEntry(StarIcon)
+#incbin "dmp/StarIcon.dmp"
+ 
 POP 

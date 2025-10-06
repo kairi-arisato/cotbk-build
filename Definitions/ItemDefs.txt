@@ -1,4 +1,12 @@
-//prfs only for now
+#define ItemTable NewItemTable
+
 #define Gawain 0x09
 #define GratiaPlena 0x0A
 #define Seiken 0x78
+#define Giantsfeller 0x94
+#define Meteor 0xbd
+#define Blizzard 0xbe
+#define Prisma 0xbf
+#define AvalonEX 0xc0
+#define KnellTypeII 0xc1
+#define Veredicto 0x8e

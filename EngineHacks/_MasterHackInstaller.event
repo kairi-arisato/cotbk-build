@@ -234,8 +234,19 @@ POP
     #include "Necessary/ExpandedModularSave/ExModularSave.event"
   
   //Text Engine Rework
-	#include "MorePatches/FE8-Text_Engine_Rework/_FE8-Text_Engine_Rework_EA.event"
+  #include "MorePatches/FE8-Text_Engine_Rework/_FE8-Text_Engine_Rework_EA.event"
 	
-	#include "MorePatches/ExtendWeaponDescBox/Installer.event"
+  #include "MorePatches/ExtendWeaponDescBox/Installer.event"
 	
-	#include "MorePatches/ModularMinimugBox-master/Installers/MMBInstallerCatball_1.event"
+  #include "MorePatches/ModularMinimugBox-master/Installers/MMBInstallerCatball_1.event"
+  
+  #include "MorePatches/Autosave/Installer.event"
+  
+  //Debugger. Use flag 0xEC.
+  //#include "MorePatches/Debugger/Installer.event"
+  
+  #include "MorePatches/BadStatus/BadStatusInstaller.event"
+  
+  #include "MorePatches/ChangeChapterObjective/Installer.event"
+  
+  #include "MorePatches/UseItemEffect/Installer.event"

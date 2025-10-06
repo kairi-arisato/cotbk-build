@@ -23,16 +23,21 @@ POIN BeginningScene EndingScene
 TurnBasedEvents:
 TurnEventEnemy(0,PlayerUnitsMarked, 1)
 TurnEventPlayer(0,CecilandArtemisaJoin,3)
+//TurnEventPlayer(0,RuneofEmbers,2)
 END_MAIN
 
 CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
+Village(0x7,KaylethsVillage,1,2)
+Village(0x8,ArtemisasVillage,14,8)
 END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
+AFEV 0x11 RuneofEmbers 0x10 //Velka dies, initate phase 2
+DefeatBoss(EndingScene)
 END_MAIN
 
 Dunno1:
@@ -48,29 +53,34 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Noir NoirLord 0x0 Level(1,Ally,0) [12,0] 0b 0x0 0x1 REDA12R2 [Gawain,Flux,Vulnerary] NoAI
+UNIT Noir NoirLord 0x0 Level(1,Ally,0) [12,0] 0x0 0x0 0x1 REDA12R2 [Gawain,Flux,Vulnerary] NoAI
+//UNIT Noir NoirLord 0x0 Level(1,Ally,0) [2,3] 0x0 0x0 0x0 0x0 [Gawain,Flux,Vulnerary,Prisma] NoAI
 UNIT Schwarze SchwarzeLord 0x0 Level(1,Ally,0) [13,0] 0x0 0x0 0x2 PrologueSchwarzeREDA [Seiken,IronBlade,Vulnerary] NoAI
-//UNIT WilliamCh1 Warrior 0x0 Level(10,Ally,0) [12,3] 0x0 0x0 0x0 0x0 [Nidhogg] NoAI
+//UNIT Schwarze SchwarzeLord 0x0 Level(1,Ally,0) [0,3] 0x0 0x0 0x0 0x0 [Seiken,IronBlade,Vulnerary] NoAI
+/*
+UNIT Noir NoirLord 0x0 Level(1,Ally,0) [3,8] 0x0 0x0 0x0 0x0 [Gawain,Flux,Vulnerary] NoAI
+UNIT Schwarze SchwarzeLord 0x0 Level(1,Ally,0) [2,8] 0x0 0x0 0x0 0x0 [Seiken,IronBlade,Vulnerary] NoAI
+*/
 UNIT
 
 EnemyUnits:
-UNIT Mercenary Fighter 0x0 Level(1,Enemy,0) [8,1] 0x0 0x0 0x0 0x0 [IronAxe] DefaultAI
-UNIT Mercenary Merc 0x0 Level(1,Enemy,0) [2,3] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
-UNIT Mercenary Fighter 0x0 Level(2,Enemy,1) [6,9] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
-UNIT Mercenary MyrmF 0x0 Level(3,Enemy,0) [2,9] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
-UNIT Mercenary FighterF 0x0 Level(2,Enemy,0) [2,7] 0x0 0x0 0x0 0x0 [IronAxe] [0x00, 0x12, 0x00, 0x00]
-UNIT Mercenary MercF 0x0 Level(2,Enemy,0) [4,0] 0x0 0x0 0x0 0x0 [IronSword] DefaultAI
-UNIT Mercenary Myrm 0x0 Level(3,Enemy,1) [0,5] 0x0 0x0 0x0 0x0 [IronSword] [0x00, 0x06, 0x00, 0x00]
-UNIT Mercenary Mage 0x0 Level(2,Enemy,1) [4,9] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
-UNIT Mercenary Fighter 0x0 Level(2,Enemy,1) [11,9] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
-UNIT Mercenary Myrm 0x0 Level(2,Enemy,1) [8,6] 0x0 0x0 0x0 0x0 [IronSword] [0x0C, 0x00, 0x00, 0x00]
-UNIT Mercenary MyrmF 0x0 Level(2,Enemy,1) [12,7] 0x0 0x0 0x0 0x0 [IronSword] [0x00, 0x06, 0x00, 0x00]
-UNIT Mercenary Fighter 0x0 Level(2,Enemy,1) [5,4] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
-UNIT Mercenary ArcherF 0x0 Level(3,Enemy,1) [0,9] 0x0 0x0 0x0 0x0 [Longbow] NeverMoveAI
-UNIT Mercenary Merc 0x0 Level(2,Enemy,1) [6,6] 0x0 0x0 0x0 0x0 [IronBlade] AttackInRangeAI
+UNIT GenericMerc Fighter 0x0 Level(1,Enemy,0) [8,1] 0x0 0x0 0x0 0x0 [IronAxe] DefaultAI
+UNIT GenericMerc Merc 0x0 Level(1,Enemy,0) [2,3] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT GenericMerc Fighter 0x0 Level(2,Enemy,1) [6,9] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+UNIT GenericMerc MyrmF 0x0 Level(3,Enemy,0) [2,9] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT GenericMerc FighterF 0x0 Level(2,Enemy,0) [2,7] 0x0 0x0 0x0 0x0 [IronAxe] [0x00, 0x12, 0x00, 0x00]
+UNIT GenericMerc MercF 0x0 Level(2,Enemy,0) [4,0] 0x0 0x0 0x0 0x0 [IronSword] DefaultAI
+UNIT GenericMerc Myrm 0x0 Level(3,Enemy,1) [0,5] 0x0 0x0 0x0 0x0 [IronSword] [0x00, 0x06, 0x00, 0x00]
+UNIT GenericMerc Mage 0x0 Level(2,Enemy,1) [4,9] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
+UNIT GenericMerc Fighter 0x0 Level(2,Enemy,1) [11,9] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+UNIT GenericMerc Myrm 0x0 Level(2,Enemy,1) [8,6] 0x0 0x0 0x0 0x0 [IronSword] [0x0C, 0x00, 0x00, 0x00]
+UNIT GenericMerc MyrmF 0x0 Level(2,Enemy,1) [12,7] 0x0 0x0 0x0 0x0 [IronSword] [0x00, 0x06, 0x00, 0x00]
+UNIT GenericMerc Fighter 0x0 Level(2,Enemy,1) [5,4] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+UNIT GenericMerc ArcherF 0x0 Level(3,Enemy,1) [0,9] 0x0 0x0 0x0 0x0 [Longbow] NeverMoveAI
+UNIT GenericMerc Merc 0x0 Level(2,Enemy,1) [6,6] 0x0 0x0 0x0 0x0 [IronBlade] AttackInRangeAI
 UNIT
 
-EnemyUnits2:
+VelkaEncounter:
 UNIT Velka AxeWyvernF 0x0 Level(3,Enemy,0) [1,8] DropItem 0x0 0x0 0x0 [Hatchet] NeverMoveAI
 UNIT
 
@@ -80,7 +90,7 @@ UNIT
 
 CutsceneUnits1A:
 UNIT 0x8e Thief 0x0 Level(1,Enemy,0) [12,3] 0x0 0x0 0x0 0x0 [IronSword] NoAI
-UNIT Mercenary Merc 0x0 Level(1,Enemy,0) [4,4] 0x0 0x0 0x0 0x0 [IronSword] NoAI
+UNIT GenericMerc Merc 0x0 Level(1,Enemy,0) [4,4] 0x0 0x0 0x0 0x0 [IronSword] NoAI
 UNIT LeadMercB Merc 0x0 Level(1,Enemy,0) [2,2] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] NoAI
 UNIT LeadMercB Fighter 0x0 Level(1,Enemy,0) [8,5] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] NoAI
 UNIT LeadMercB Soldier 0x0 Level(1,Enemy,0) [12,1] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] NoAI
@@ -108,24 +118,69 @@ UNIT
 
 CecilJoins:
 UNIT Cecil Cav 0x0 Level(2,Ally,0) [12,0] 0x0 0x0 0x0 0x0 [IronLance,Javelin,Axereaver,Vulnerary] NoAI
+//UNIT Cecil Cav 0x0 Level(2,Ally,0) [1,3] 0x0 0x0 0x0 0x0 [IronLance,Javelin,Axereaver,Vulnerary] NoAI
 UNIT
 
 ArtemisaJoins:
 UNIT Artemisa HalberdierF 0x0 Level(1,Ally,0) [14,8] 0x0 0x0 0x1 REDA14R9 [SteelLance,SilverLance,Elixir] NoAI
 UNIT
 
-JaegerSpawns:
-UNIT Jaeger WyvernLord 0x0 Level(18,NPC,0) [14,3] 0x0 0x0 0x0 0x0 [Vidofnir] NoAI
+MinorArcanas:
+UNIT MinorArcana General 0x0 Level(1,Enemy,1) [12,6] 0x0 0x0 0x0 0x0 [SteelLance] NeverMoveAI
+UNIT MinorArcana Valkyrie 0x0 Level(1,Enemy,1) [12,7] 0x0 0x0 0x0 0x0 [Divine,Physic] NeverMoveAI
+UNIT MinorArcana MysticKn 0x0 Level(1,Enemy,1) [8,1] 0x0 0x0 0x0 0x0 [WindSword] NeverMoveAI
+UNIT MinorArcana Juggernaut 0x0 Level(1,Enemy,1) [8,2] 0x0 0x0 0x0 0x0 [KillerAxe] NeverMoveAI
+UNIT MinorArcana Swordmaster 0x0 Level(1,Enemy,1) [5,4] 0x0 0x0 0x0 0x0 [KillingEdge] [0x0C, 0x00, 0x00, 0x00]
+UNIT MinorArcana Champ 0x0 Level(2,Enemy,1) [0,8] 0x0 0x0 0x0 0x0 [Swordreaver,Hammer] DefaultAI
+UNIT MinorArcana Druid 0x0 Level(3,Enemy,1) [10,9] 0x0 0x0 0x0 0x0 [Meteor] DefaultAI
+UNIT MinorArcana WyvernKn 0x0 Level(5,Enemy,1) [8,4] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
+UNIT MinorArcana FalcoKnight 0x0 Level(5,Enemy,1) [0,9] 0x0 0x0 0x0 0x0 [SilverLance] DefaultAI	
+UNIT MinorArcana WLord 0x0 Level(5,Enemy,1) [2,0] 0x0 0x0 0x0 0x0 [SilverLance,ShortSpear] DefaultAI
 UNIT
 
-/* I'm just testing if these work.
-AdamWarpsIn:
-UNIT AdamCh1 Sage 0x0 Level(10,NPC,0) [6,8] 0x0 0x0 0x0 0x0 [Aura] DefaultAI
+//Velka transforms.
+PreTransformationVelka:
+UNIT Velka AxeWyvernF 0x0 Level(3,Enemy,0) [8,5] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] NeverMoveAI
 UNIT
-LilliaWarpsIn:
-UNIT Lillia Mother 0x0 Level(10,NPC,0) [7,7] 0x0 0x0 0x0 0x0 [Aura, Warp] DefaultAI
+PostTransformationVelka:
+UNIT RuneVelka Conqueror 0x0 Level(1,Enemy,0) [8,5] 0x0 0x0 0x0 0x0 [WindSword,FiliShield] DefaultAI
 UNIT
-*/
+
+//Adam, Lillia, the commanders, Blaise, and Argent warp in. William's also there.
+AdamSpawns:
+UNIT AdamCh1 Sage 0x0 Level(10,NPC,0) [6,8] 0x0 0x0 0x0 0x0 [Prisma] DefaultAI
+UNIT
+LilliaSpawns:
+UNIT Lillia Mother 0x0 Level(10,NPC,0) [7,7] 0x0 0x0 0x0 0x0 [Prisma,Warp] DefaultAI
+UNIT
+BlaiseSpawns:
+UNIT Blaise General 0x0 Level(5,NPC,0) [4,5] 0x0 0x0 0x0 0x0 [ShortSpear,SilverAxe] NeverMoveAI
+UNIT
+ArgentSpawns:
+UNIT Argent Juggernaut 0x0 Level(5,NPC,0) [3,6] 0x0 0x0 0x0 0x0 [SilverSword,SilverAxe] NeverMoveAI
+UNIT
+CommanderASpawns:
+UNIT CommanderA General 0x0 Level(1,NPC,1) [3,5] 0x0 0x0 0x0 0x0 [ShortSpear] NeverMoveAI
+UNIT
+CommanderBSpawns:
+UNIT CommanderB General 0x0 Level(1,NPC,1) [2,5] 0x0 0x0 0x0 0x0 [SilverBlade] NeverMoveAI
+UNIT
+WilliamArrives:
+UNIT WilliamCh1 Warrior 0x0 Level(10,Ally,1) [3,9] 0x0 0x0 0x0 0x0 [Giantsfeller] NoAI
+UNIT
+
+//This is the part where Jaeger kills Velka.
+JaegerSpawns:
+UNIT Jaeger WyvernLord 0x0 Level(18,NPC,0) [14,3] 0x0 0x0 0x1 REDA12R3 [Veredicto] NoAI
+UNIT
+
+//If these units died earlier than they were supposed to:
+IfWilliamDiedEarly:
+UNIT WilliamCh1 Warrior 0x0 Level(10,Ally,1) [11,4] 0x0 0x0 0x0 0x0 [Giantsfeller] NoAI
+UNIT
+IfVelkaDiedEarly:
+UNIT RuneVelka Conqueror 0x0 Level(1,Enemy,0) [11,1] 0x0 0x0 0x0 0x0 [WindSword] DefaultAI
+UNIT
 
 Traps1:
 IronBallista(10,3)
@@ -146,7 +201,7 @@ ENUN
 StartBattle
 CriticalHit(0,99)
 EndAttack
-FIGHT_MAP KalmSoldierA Mercenary KillerLance False
+FIGHT_MAP KalmSoldierA GenericMerc KillerLance False
 LOAD1 0 CutsceneUnits1C
 Text(SchwarzeRemarksonReinforcements)
 MOVE 15 Maria [11,4]
@@ -179,18 +234,17 @@ ENUN
 MoveByCoords(30, 4, 3, 3, 3)
 MoveByCoords(30, 7, 2, 6, 2)
 ENUN
-STAL 60
 FADI 16
 REMOVEALL_BLUE
 REMOVEALL_GREEN
 REMOVEALL_RED
-EVBIT_T 4
-FADU 60
 LOMA 0x00 //Main event
+ENUT 0xEF
 LOAD1 1 EnemyUnits
 ENUN
-LOAD1 1 EnemyUnits2
+LOAD1 1 VelkaEncounter
 ENUN
+ENUF 0xEF
 CALL 0x08591F40 //For some reason, there are TWO fade ins here, even though I've set them exactly how the original hack did it. If I remove this, the REDAs don't work. If I add it, it looks really weird. I will fix this later.
 LOAD1 1 Units1
 ENUN
@@ -207,16 +261,19 @@ TEXTSTART
 TEXTSHOW NoirRemarksonVillages
 TEXTEND
 CURSOR_FLASHING [1,2]
-STAL 60
-REMOVE_CURSORS
 CURSOR_FLASHING [14,8]
 STAL 60
 REMOVE_CURSORS
 TEXTCONT
 TEXTEND
 REMA
-NoFade
-ENDA
+/*
+LOAD1 1 Units1
+LOAD1 1 ArtemisaJoins
+LOAD1 1 CecilJoins
+LOAD1 1 MapAllies1
+*/
+NoFade;ENDA
 
 PlayerUnitsMarked:
 CAMERA_CENTERED Velka
@@ -224,18 +281,24 @@ CURSOR Velka
 STAL 60
 REMOVE_CURSORS
 Text(PlayerUnitsMarkedText)
-NoFade
-ENDA
+NoFade;ENDA
 
 CecilandArtemisaJoin:
 CAMERA_CENTERED Noir
+CURSOR Schwarze
+STAL 60
+REMOVE_CURSORS
 CURSOR Noir
 STAL 60
 REMOVE_CURSORS
 SetBackground(0x1D)
 Text(SchwarzeTalksTerrain)
 EndConvo
-TorchEffect
+EVBIT_T 4
+UseTorch(Schwarze, 0)
+SET_ACTIVE Schwarze
+STAL 30
+EVBIT_F 4
 SetBackground(0x24)
 Text(CecilJoinsText)
 EndConvo
@@ -265,13 +328,239 @@ ENUN
 CURSOR Artemisa
 STAL 60
 REMOVE_CURSORS
-NoFade
-ENDA
+CURSOR [1,2]
+STAL 60
+REMOVE_CURSORS
+SetBackground(0x2)
+Text(KaylethSignposting)
+EndConvo
+NoFade;ENDA
+
+RuneofEmbers:
+ASMC 0x8022739
+ENUN
+SET_ACTIVE 0x0
+Text(VelkaDies)
+STAL 60
+FADI 5
+SetBackground(0x2E)
+BROWNBOX KalmPalaceBrownBoxText [0,0]
+Text(TheRuneofEmbersIsStolen)
+CLEAN
+FADU 5
+SetBackground(0x1E)
+Text(LaytonGivesVelkaRune)
+SOUN 0xB4
+FAWI 4
+CLEAN
+REMOVEALL_RED
+LOAD1 1 PreTransformationVelka
+FAWU 4
+CURSOR Velka
+STAL 60
+REMOVE_CURSORS
+TEXTSTART
+TEXTSHOW VelkaUsestheRune
+TEXTEND
+//Remove music.
+TEXTCONT
+TEXTEND
+REMA
+CURSOR Velka
+STAL 60
+REMOVE_CURSORS
+SOUN 0x3B2
+STARTFADE
+FADECOLORS 0x1006 3 110 1 1
+EARTHQUAKE 0 True
+STAL 60
+EARTHQUAKE_END
+FAWI 4
+REMOVEALL_RED
+LOAD1 1 PostTransformationVelka
+FAWU 4
+STAL 60
+Text(NoirRemarksontheRunesChoice)
+EVBIT_T 4
+SOUN 0x2E4
+FAWI 4
+ENDFADE
+WEATHER 5
+LOAD1 1 MinorArcanas
+FAWU 4
+STAL 60
+CHECK_ALIVE KalmSoldierB
+BEQ 69 sC s0
+	MOVE 60 RuneVelka [9,3]
+	ENUN
+	StartBattle
+	CriticalHit(0,99)
+	EndAttack
+	FIGHT RuneVelka KalmSoldierB WindSword False
+	KILL KalmSoldierB
+LABEL 69
+DISA KalmSoldierB
+ENUT 0x0F
+MOVE 30 RuneVelka [3,1]
+ENUN
+LOAD1 1 WilliamArrives
+ENUN
+CURSOR WilliamCh1
+STAL 60
+REMOVE_CURSORS
+Text(WilliamArrivesText)
+WARPIN [6,8]
+LOAD1 1 AdamSpawns
+ENDWARP
+WARPIN [7,7]
+LOAD1 1 LilliaSpawns
+ENDWARP
+WARPIN [4,5]
+LOAD1 1 BlaiseSpawns
+ENDWARP
+WARPIN [3,6]
+LOAD1 1 ArgentSpawns
+ENDWARP
+WARPIN [3,5]
+LOAD1 1 CommanderASpawns
+ENDWARP
+WARPIN [2,5]
+LOAD1 1 CommanderBSpawns
+ENDWARP
+CURSOR AdamCh1
+STAL 60
+REMOVE_CURSORS
+Text(ThePlan)
+GiveItem(KnellTypeII,Schwarze)
+GiveItem(AvalonEX,Noir)
+TEXTSTART
+TEXTSHOW ThePlan2
+TEXTEND
+CURSOR_FLASHING [10,3]
+STAL 60
+REMOVE_CURSORS
+TEXTCONT
+TEXTEND
+REMA
+TUTORIALTEXTBOXSTART
+SetChapterObjectiveText(Ch1ChangeObjective, Ch1ChangeObjectiveDetailed)
+CenterTutorialTextBox
+TEXTSHOW LilliaBuffNotice
+TEXTEND
+REMA
+SetBadStatus(Schwarze,0x56)
+SetBadStatus(Noir,0x56)
+SetBadStatus(Cecil,0x56)
+SetBadStatus(Artemisa,0x56)
+NoFade;ENDA
+
+KaylethsVillage:
+SetBackground(0x1)
+CHECK_ACTIVE
+SVAL s1 Schwarze
+BNE 0 sC s1 //sC means the result, s1 is the "saved" unit. So in this case, visiting unit (Schwarze) is s1, then sC confirms if he is.
+    Text(KaylethsVillageSchwarzeText)
+	ENUT KaylethVisitedCh1Flag
+    GOTO 2
+LABEL 0
+CHECK_ACTIVE
+SVAL s1 Noir
+BNE 1 sC s1
+    Text(KaylethsVillageNoirText)
+	ENUT KaylethVisitedCh1Flag
+    GOTO 2
+LABEL 1
+	Text(KaylethsVillageText)
+LABEL 2
+EndConvo
+GiveItem(Elixir,-1)
+GiveItem(Vulnerary,-1)
+NoFade;ENDA
+
+ArtemisasVillage:
+SetBackground(0x5)
+CHECK_ACTIVE
+SVAL s1 Artemisa
+BNE 0 sC s1
+	Text(ArtemisaVillageSpecificText)
+	GOTO 2
+LABEL 0 // ^ If Artemisa visits the village.
+	Text(ArtemisaVillageGenericText)
+	GOTO 2
+LABEL 1 // ^ If someone else visits the village. Why the hell do LABELs work this way?
+LABEL 2
+EndConvo
+GiveItem(BraveLance,-1)
+
+NoFade;ENDA
 
 EndingScene:
+FADI 4
+ENUT 14
+REMOVEALL_BLUE
+REMOVEALL_GREEN
+REMOVEALL_RED
+LOAD1 1 IfWilliamDiedEarly
+	SVAL 1 15  //SVAL 0x1 HP Value
+	SET_HP WilliamCh1 //SET_HP UnitID
+LOAD1 1 IfVelkaDiedEarly
+	SVAL 1 26
+	SET_HP RuneVelka
+MOVE -1 Schwarze [12,3]
+MOVE -1 Noir [10,3]
+ENUN
+	SVAL 1 19
+	SET_HP Schwarze
+	SVAL 1 2
+	SET_HP Noir
+FADU 4
 //ASMC 0x85C71 0x381F5 0x37CF9 //show records screen
-STAL 120
+STAL 60
+Text(PlaceholderText)
+StartBattle //William attacks Velka.
+NormalDamage(0,8)
+EndAttack
+FIGHT WilliamCh1 RuneVelka Giantsfeller False
+MOVE 15 Schwarze [12,1]
+ENUN
+StartBattle
+NormalDamage(0,8)
+EndAttack
+FIGHT Schwarze RuneVelka KnellTypeII False
+MOVE 15 Noir [10,1]
+ENUN
+StartBattle
+CriticalHit(0,9)
+EndAttack
+FIGHT Noir RuneVelka AvalonEX False
+Text(PlaceholderText)
+SOUN 0xF5
+FAWI 7
+FAWU 7
+CURSOR Schwarze
+STAL 60
+REMOVE_CURSORS
+Text(PlaceholderText)
+MOVE 30 RuneVelka [11,3]
+ENUN
+StartBattle
+CriticalHit(1,30)
+EndAttack
+FIGHT WilliamCh1 RuneVelka WindSword False
+Text(PlaceholderText)
+LOAD1 1 JaegerSpawns
+ENUN
+StartBattle
+CriticalHit(0,99)
+EndAttack
+FIGHT Jaeger RuneVelka Veredicto False
+MUSCSLOW 0x7fff
+KILL RuneVelka
+STAL 60
+MOVE 60 Jaeger [0,2]
+ENUN
+DISA Jaeger
+Text(PlaceholderText)
 EVBIT_F 0x2
 MNTS 0x1 //return to title screen
-NoFade
-ENDA
+NoFade;ENDA

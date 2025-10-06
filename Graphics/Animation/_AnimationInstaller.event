@@ -1,7 +1,12 @@
 {
-#include "schwarze_lord/schwarze_swd/Sword Installer.event"
-#include "schwarze_lord/schwarze_item/Unarmed Installer.event"
+#include "schwarze_lord/schwarze_swd/Sword Installer Installer.event"
+#include "schwarze_lord/schwarze_item/Unarmed Installer Installer.event"
 }
 {
 #include "noir_lord/noir_dark/Dark Installer.event"
+}
+{
+#include "[WR Reskin] [F] Helmetless by eCut/3. Axe/Axe Installer.event"
+#include "[WR Reskin] [F] Helmetless by eCut/4. Handaxe/Handaxe Installer.event"
+#include "[WR Reskin] [F] Helmetless by eCut/8. Unarmed/Unarmed Installer.event"
 }

@@ -23,6 +23,7 @@ POP
 #define HalbFStand 108
 #define AxeWyvernStand 109
 #define AxeWyvernFStand 110
+#define DragonheartStand 111
 
 //Standing map sprites
 StandingMapSprite(0x0,1,SchwarzeLordStanding)
@@ -33,6 +34,7 @@ StandingMapSprite(HalbMStand,1,HalbMStanding)
 StandingMapSprite(HalbFStand,1,HalbFStanding)
 StandingMapSprite(AxeWyvernStand,1,AxeWyvernStanding)
 StandingMapSprite(AxeWyvernFStand,1,AxeWyvernFStanding)
+StandingMapSprite(DragonheartStand,1,DragonheartStanding)
 
 //Moving map sprites
 MovingMapSprite(0x1,NormalAP,SchwarzeLordMoving)
@@ -43,3 +45,4 @@ MovingMapSprite(0x37,NormalAP,HalbMMoving)
 MovingMapSprite(0x47,NormalAP,HalbFMoving)
 MovingMapSprite(0x3D,WyvernRiderAP,AxeWyvernMoving)
 MovingMapSprite(0x3E,WyvernRiderAP,AxeWyvernFMoving)
+MovingMapSprite(0x7F,WyvernRiderAP,DragonheartWalking)

@@ -43,3 +43,15 @@ NoirLordAnims:
 	DarkAnim(NoirLordDarkAnim)
 	UnarmedAnim(NoirLordDarkAnim)
 EndAnim
+
+#define WRiderF_AxeAnim 0xCA
+#define WRiderF_HAxeAnim 0xCB
+#define WRiderF_UnarmedAnim 0xCC
+
+ALIGN 4
+WRiderFAnims:
+	AxeAnim(WRiderF_UnarmedAnim)
+	SpecialAnim(WRiderF_HAxeAnim,HandAxe)
+	SpecialAnim(WRiderF_HAxeAnim,Hatchet)
+	UnarmedAnim(WRiderF_UnarmedAnim)
+EndAnim

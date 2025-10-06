@@ -5,12 +5,9 @@ Commander[X]
 An armored user of forgotten magic[n]
 who leads a powerful force. [ArmorIcon][DarkIcon][X]
 
-## SchwarzeLordName
-Lord[X]
-
 ## SchwarzeLordDesc
-A honorable knight who fights[n]
-for justice. [SwordIcon][X]
+A honorable knight who[n]
+fights for justice. [SwordIcon][X]
 
 //No wyvern rider name.
 

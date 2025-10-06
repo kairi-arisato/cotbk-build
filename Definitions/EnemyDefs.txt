@@ -5,7 +5,12 @@
 #define AdamCh1 0x45
 
 //generics
-#define Mercenary 0x82
+#define GenericMerc 0x82
 #define LeadMercA 0x81
 #define LeadMercB 0x83
 #define MinorArcana 0x84
+#define KalmSoldierA 0x85
+#define KalmSoldierB 0x86
+#define CommanderA 0x87
+#define CommanderB 0x88
+#define Janus 0x89
