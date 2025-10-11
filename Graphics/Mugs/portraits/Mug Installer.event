@@ -1,3 +1,112 @@
 ALIGN 4
-DianaMug:
-#incext PortraitFormatter "CarrieOC_flasuban.png"
+AdamMug:
+#incbin "Adam_mug.dmp"
+#incbin "Adam_frames.dmp"
+#incbin "Adam_palette.dmp"
+#incbin "Adam_minimug.dmp"
+
+ALIGN 4
+ArgentMug:
+#incbin "Argent_mug.dmp"
+#incbin "Argent_frames.dmp"
+#incbin "Argent_palette.dmp"
+#incbin "Argent_minimug.dmp"
+
+ALIGN 4
+ArtemisaMug:
+#incbin "Artemisa_mug.dmp"
+#incbin "Artemisa_frames.dmp"
+#incbin "Artemisa_palette.dmp"
+#incbin "Artemisa_minimug.dmp"
+
+ALIGN 4
+BlaiseMug:
+#incbin "Blaise_mug.dmp"
+#incbin "Blaise_frames.dmp"
+#incbin "Blaise_palette.dmp"
+#incbin "Blaise_minimug.dmp"
+
+ALIGN 4
+CecilMug:
+#incbin "Cecil_mug.dmp"
+#incbin "Cecil_frames.dmp"
+#incbin "Cecil_palette.dmp"
+#incbin "Cecil_minimug.dmp"
+
+ALIGN 4
+GilbertMug:
+#incbin "Gilbert_mug.dmp"
+#incbin "Gilbert_frames.dmp"
+#incbin "Gilbert_palette.dmp"
+#incbin "Gilbert_minimug.dmp"
+
+ALIGN 4
+HermesMug:
+#incbin "Hermes_mug.dmp"
+#incbin "Hermes_frames.dmp"
+#incbin "Hermes_palette.dmp"
+#incbin "Hermes_minimug.dmp"
+
+ALIGN 4
+LilliaMug:
+#incbin "Lillia_mug.dmp"
+#incbin "Lillia_frames.dmp"
+#incbin "Lillia_palette.dmp"
+#incbin "Lillia_minimug.dmp"
+
+ALIGN 4
+MariaMug:
+#incbin "Maria_mug.dmp"
+#incbin "Maria_frames.dmp"
+#incbin "Maria_palette.dmp"
+#incbin "Maria_minimug.dmp"
+
+ALIGN 4
+NoirMug:
+#incbin "Noir_mug.dmp"
+#incbin "Noir_frames.dmp"
+#incbin "Noir_palette.dmp"
+#incbin "Noir_minimug.dmp"
+
+ALIGN 4
+RuneVelkaMug:
+#incbin "RuneVelka_mug.dmp"
+#incbin "RuneVelka_frames.dmp"
+#incbin "RuneVelka_palette.dmp"
+#incbin "RuneVelka_minimug.dmp"
+
+ALIGN 4
+SchwarzeMug:
+#incbin "Schwarze_mug.dmp"
+#incbin "Schwarze_frames.dmp"
+#incbin "Schwarze_palette.dmp"
+#incbin "Schwarze_minimug.dmp"
+
+ALIGN 4
+VelkaMug:
+#incbin "Velka_mug.dmp"
+#incbin "Velka_frames.dmp"
+#incbin "Velka_palette.dmp"
+#incbin "Velka_minimug.dmp"
+
+ALIGN 4
+VertMug:
+#incbin "Vert_mug.dmp"
+#incbin "Vert_frames.dmp"
+#incbin "Vert_palette.dmp"
+#incbin "Vert_minimug.dmp"
+
+ALIGN 4
+WeissMug:
+#incbin "Weiss_mug.dmp"
+#incbin "Weiss_frames.dmp"
+#incbin "Weiss_palette.dmp"
+#incbin "Weiss_minimug.dmp"
+
+ALIGN 4
+WilliamMug:
+#incbin "William_mug.dmp"
+#incbin "William_frames.dmp"
+#incbin "William_palette.dmp"
+#incbin "William_minimug.dmp"
+

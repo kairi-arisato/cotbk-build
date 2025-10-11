@@ -11,3 +11,7 @@ Summons a piercing sword.[n]
 # 0x424
 Gifted to Schwarze upon[n]
 knighting. Eff: [ArmorIcon][X]
+
+# 0x465
+Basic dark spell. After combat, apply[n]
+-2 to STR/MAG/SKL of the enemy.[X]

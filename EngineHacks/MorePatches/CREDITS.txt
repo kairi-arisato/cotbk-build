@@ -1,0 +1,9 @@
+modular supply - snakey1
+removeitemfromunit - 7743, ported by zane avernathy
+mmb - vesly?
+fe8 text engine rework - tequila
+extend weapon desc box - vesly
+display droppable item - scraiza
+autosave - vesly
+badstatus - 7743, vesly
+useitemeffect - 7743, vesly

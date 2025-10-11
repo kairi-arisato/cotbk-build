@@ -12,7 +12,9 @@
 ALIGN 4
 DeathQuoteTable:
 ChapterDeathQuote(Velka,Chapter1,0x10,VelkaDeathQuote)
-ChapterDeathQuote(RuneVelka,Chapter1,DefeatBossFlag,PlaceholderText)
+ChapterDeathQuote(RuneVelka,Chapter1,DefeatBossFlag,RuneVelkaDeathQuote1)
+ChapterDeathQuote(RuneVelka,Chapter1,0x1A,JaegerKillsRuneVelka)
+ChapterDeathQuote(WilliamCh1,Chapter1,0x65,WilliamCh1DeathQuote)
 
 //Player death quotes
 AlwaysDeathQuote(Schwarze,0x65,PlaceholderText)

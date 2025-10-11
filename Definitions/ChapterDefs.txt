@@ -1,10 +1,13 @@
 //ChapterIDs
 #define AllChapters 0xFF
 #define Chapter1 0x00
+#define Chapter1Cutscene 0x45
 
 //flags
 #define DebugFlag 0xEC
 #define KaylethVisitedCh1Flag 0x12B
+#define CecilIsDeadFlag1 0x8B
+#define CecilIsDeadFlag2 0x91
 
 //palette
 #define Fields4PaletteID 0x89

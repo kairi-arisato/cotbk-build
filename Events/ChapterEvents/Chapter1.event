@@ -27,17 +27,23 @@ TurnEventPlayer(0,CecilandArtemisaJoin,3)
 END_MAIN
 
 CharacterBasedEvents:
+CharacterEventBothWays(0x16,NoirCecilTalk,Noir,Cecil)
+CharacterEventBothWays(0x17,SchwarzeArtemisaTalk,Schwarze,Artemisa)
+CharacterEventBothWays(0x18,BlaiseNoirTalk,Blaise,Noir)
 END_MAIN
 
 LocationBasedEvents:
 Village(0x7,KaylethsVillage,1,2)
 Village(0x8,ArtemisasVillage,14,8)
+House(0x0,HouseTextCh1_1,8,6)
+House(0x0,HouseTextCh1_2,9,8)
 END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
 AFEV 0x11 RuneofEmbers 0x10 //Velka dies, initate phase 2
-DefeatBoss(EndingScene)
+DefeatBoss(EndingScene) //if RuneVelka dies early
+AREA 0x0 WilliamBallistaArrive [10,3] [10,3]
 END_MAIN
 
 Dunno1:
@@ -143,7 +149,7 @@ PreTransformationVelka:
 UNIT Velka AxeWyvernF 0x0 Level(3,Enemy,0) [8,5] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] NeverMoveAI
 UNIT
 PostTransformationVelka:
-UNIT RuneVelka Conqueror 0x0 Level(1,Enemy,0) [8,5] 0x0 0x0 0x0 0x0 [WindSword,FiliShield] DefaultAI
+UNIT RuneVelka Conqueror 0x0 Level(1,Enemy,1) [8,5] DropItem 0x0 0x0 0x0 [WindSword,DelphiShield,Elixir] DefaultAI
 UNIT
 
 //Adam, Lillia, the commanders, Blaise, and Argent warp in. William's also there.
@@ -175,12 +181,38 @@ UNIT Jaeger WyvernLord 0x0 Level(18,NPC,0) [14,3] 0x0 0x0 0x1 REDA12R3 [Veredict
 UNIT
 
 //If these units died earlier than they were supposed to:
+
 IfWilliamDiedEarly:
 UNIT WilliamCh1 Warrior 0x0 Level(10,Ally,1) [11,4] 0x0 0x0 0x0 0x0 [Giantsfeller] NoAI
 UNIT
 IfVelkaDiedEarly:
-UNIT RuneVelka Conqueror 0x0 Level(1,Enemy,0) [11,1] 0x0 0x0 0x0 0x0 [WindSword] DefaultAI
+UNIT RuneVelka Conqueror 0x0 Level(1,Enemy,1) [11,1] DropItem 0x0 0x0 0x0 [WindSword,DelphiShield,Elixir] DefaultAI
 UNIT
+
+JanusMageTeleport:
+UNIT Janus Sage 0x0 Level(1,NPC,1) [11,1] 0x0 0x0 0x0 0x0 [Blizzard] DefaultAI
+UNIT
+JanusMageTeleport2:
+UNIT Janus Sage 0x0 Level(1,NPC,1) [6,1] 0x0 0x0 0x0 0x0 [Blizzard] DefaultAI
+UNIT
+RuneVelkaTeleport:
+UNIT RuneVelka Conqueror 0x0 Level(1,Enemy,1) [11,1] DropItem 0x0 0x0 0x0 [WindSword,DelphiShield,Elixir] DefaultAI
+UNIT
+
+Ch1EndingCutscene:
+UNIT KalmSoldierA General 0x0 Level(1,NPC,0) [6,0] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] DefaultAI
+UNIT KalmSoldierA Archer_F 0x0 Level(1,NPC,0) [8,2] 0x0 0x0 0x0 0x0 [0x0,0x0,0x0,0x0] DefaultAI
+UNIT
+Ch1EndingCutscene_2:
+UNIT Schwarze SchwarzeLord 0x0 Level(1,Ally,0) [0,4] 0x0 0x0 0x1 REDA4R4 [0x0,0x0,0x0,0x0] NoAI
+UNIT Noir NoirLord 0x0 Level(1,Ally,0) [0,5] 0x0 0x0 0x1 REDA4R3 [0x0,0x0,0x0,0x0] NoAI
+UNIT Artemisa HalberdierF 0x0 Level(1,Ally,0) [1,6] 0x0 0x0 0x1 REDA3R2 [0x0,0x0,0x0,0x0] NoAI
+UNIT Cecil Cav 0x0 Level(1,Ally,0) [0,4] 0x0 0x0 0x1 REDA5R4 [0x0,0x0,0x0,0x0] NoAI
+UNIT
+Ch1EndingCutscene_3:
+UNIT Maria FighterF 0x0 Level(3,Ally,0) [14,6] 0x0 0x0 0x1 REDA10R4 [SteelAxe,HandAxe,GratiaPlena] NoAI
+UNIT Hermes AxeWyvern 0x0 Level(3,Ally,0) [14,4] 0x0 0x0 0x1 REDA11R2 [IronAxe,SteelLance,Vulnerary] NoAI
+UNIT 
 
 Traps1:
 IronBallista(10,3)
@@ -298,10 +330,10 @@ EVBIT_T 4
 UseTorch(Schwarze, 0)
 SET_ACTIVE Schwarze
 STAL 30
-EVBIT_F 4
 SetBackground(0x24)
 Text(CecilJoinsText)
 EndConvo
+EVBIT_F 4
 LOAD1 1 CecilJoins
 CURSOR Cecil
 STAL 60
@@ -337,6 +369,7 @@ EndConvo
 NoFade;ENDA
 
 RuneofEmbers:
+ENUT 0x1B
 ASMC 0x8022739
 ENUN
 SET_ACTIVE 0x0
@@ -346,10 +379,11 @@ FADI 5
 SetBackground(0x2E)
 BROWNBOX KalmPalaceBrownBoxText [0,0]
 Text(TheRuneofEmbersIsStolen)
+FADI 5
 CLEAN
 FADU 5
 SetBackground(0x1E)
-Text(LaytonGivesVelkaRune)
+Text(UmbraGivesVelkaRune)
 SOUN 0xB4
 FAWI 4
 CLEAN
@@ -394,6 +428,7 @@ BEQ 69 sC s0
 	MOVE 60 RuneVelka [9,3]
 	ENUN
 	StartBattle
+	SetScriptedBattle(100,34,28,0xFF,0xFF,0xFF)
 	CriticalHit(0,99)
 	EndAttack
 	FIGHT RuneVelka KalmSoldierB WindSword False
@@ -491,15 +526,95 @@ LABEL 1 // ^ If someone else visits the village. Why the hell do LABELs work thi
 LABEL 2
 EndConvo
 GiveItem(BraveLance,-1)
+NoFade;ENDA
 
+WilliamBallistaArrive:
+CHECK_INAREA WilliamCh1 [10,3] [1,1]
+BEQ 69 sC s0
+	ASMC 0x8022739
+	ENUN
+	SET_ACTIVE 0x0
+	Text(WilliamFiresBallista)
+	FAWI 8
+		SOUN 0xD0
+		STAL 6
+		SOUN 0xD0
+		STAL 6
+		SOUN 0xD0
+		STAL 6
+	FAWU 8
+	CURSOR RuneVelka
+	STAL 60
+	REMOVE_CURSORS
+	Text(JanusMageTPsIn)
+	WARPIN [11,1]
+		LOAD1 1 JanusMageTeleport
+	ENDWARP
+	MOVE 15 RuneVelka [6,1]
+	StartBattle
+	SetScriptedBattle(100,19,15,0xFF,0xFF,0xFF)
+	NormalDamage(0,19)
+	EndAttack
+	FIGHT Janus RuneVelka Blizzard False
+	WARPOUT [11,1]
+		DISA Janus
+	ENDWARP
+	WARPOUT [6,1]
+		DISA RuneVelka
+	ENDWARP
+	WARPIN [6,1]
+		LOAD1 1 JanusMageTeleport2
+	ENDWARP
+	WARPIN [11,1]
+		LOAD1 1 RuneVelkaTeleport
+		SVAL s1 26
+		SET_HP RuneVelka
+	ENDWARP
+	Text(DefensesAreDown)
+	CALL EndingScene
+LABEL 69
+NoFade;ENDA
+
+NoirCecilTalk:
+	Text(NoirCecilTalkText)
+NoFade;ENDA
+
+SchwarzeArtemisaTalk:
+	Text(SchwarzeArtemisaTalkText)
+NoFade;ENDA
+
+BlaiseNoirTalk:
+	Text(BlaiseNoirTalkText)
+NoFade;ENDA
+
+HouseTextCh1_1:
+	SetBackground(0x1)
+	Text(HouseTextCh1_1Text)
+	TUTORIALTEXTBOXSTART
+	SetChapterObjectiveText(Ch1ChangeObjective, Ch1ChangeObjectiveDetailed)
+	CenterTutorialTextBox
+	TEXTSHOW HouseTextCh1_1TutorialText
+	TEXTEND
+	REMA
+	EndConvo
+NoFade;ENDA
+
+HouseTextCh1_2:
+	SetBackground(0x0)
+	Text(HouseTextCh1_2Text)
+	EndConvo
 NoFade;ENDA
 
 EndingScene:
 FADI 4
-ENUT 14
+ENUT 0x14
+ENUT 0x10
+ENUT 0x0F
+ENUT 0x2
 REMOVEALL_BLUE
 REMOVEALL_GREEN
 REMOVEALL_RED
+DISA WilliamCh1
 LOAD1 1 IfWilliamDiedEarly
 	SVAL 1 15  //SVAL 0x1 HP Value
 	SET_HP WilliamCh1 //SET_HP UnitID
@@ -516,51 +631,122 @@ ENUN
 FADU 4
 //ASMC 0x85C71 0x381F5 0x37CF9 //show records screen
 STAL 60
-Text(PlaceholderText)
+Text(WilliamGiveItUp)
 StartBattle //William attacks Velka.
+SetScriptedBattle(71,8,12,0xFF,0xFF,0xFF)
 NormalDamage(0,8)
 EndAttack
 FIGHT WilliamCh1 RuneVelka Giantsfeller False
 MOVE 15 Schwarze [12,1]
 ENUN
 StartBattle
+SetScriptedBattle(63,8,5,100,18,45)
 NormalDamage(0,8)
+NormalDamage(1,18)
 EndAttack
 FIGHT Schwarze RuneVelka KnellTypeII False
 MOVE 15 Noir [10,1]
 ENUN
 StartBattle
+SetScriptedBattle(67,3,5,0xFF,0xFF,0xFF)
 CriticalHit(0,9)
 EndAttack
 FIGHT Noir RuneVelka AvalonEX False
-Text(PlaceholderText)
+Text(SurvivesAllAttacks)
 SOUN 0xF5
 FAWI 7
+ENUF 0x0F
 FAWU 7
 CURSOR Schwarze
 STAL 60
 REMOVE_CURSORS
-Text(PlaceholderText)
+Text(KnellStopsWorking)
 MOVE 30 RuneVelka [11,3]
 ENUN
 StartBattle
-CriticalHit(1,30)
+SetScriptedBattle(100,30,49,0xFF,0xFF,0xFF)
+CriticalHit(0,30)
 EndAttack
-FIGHT WilliamCh1 RuneVelka WindSword False
-Text(PlaceholderText)
+FIGHT RuneVelka WilliamCh1 WindSword False
+KILL WilliamCh1
+AWAIT_KILL WilliamCh1
+Text(WilliamDiesPostBattleTxt)
+ENUT 0xF
 LOAD1 1 JaegerSpawns
 ENUN
 StartBattle
-CriticalHit(0,99)
+SetScriptedBattle(92,30,6,94,41,30)
+CriticalHit(0,90)
 EndAttack
 FIGHT Jaeger RuneVelka Veredicto False
-MUSCSLOW 0x7fff
+MUSC 0x7FFF
 KILL RuneVelka
 STAL 60
 MOVE 60 Jaeger [0,2]
 ENUN
 DISA Jaeger
-Text(PlaceholderText)
+FAWI 5
+WEATHER 0
+FAWU 5
+Text(WhoWasThat)
+RemoveItem(AvalonEX)
+RemoveItem(KnellTypeII)
+RemoveItem(Giantsfeller)
+REMOVEUNIT WilliamCh1; //MUSC Legend of the Dragon God (FE1)
+EVBIT_MODIFY 3
+SetBackground(0x5)
+Text(PostBattleCh1_1)
+SetBackground(0x1E)
+CHECK_ALIVE Cecil
+BEQ 0 sC s0
+	//Remember to run a check if Cecil is alive.
+	MUSC 0x63
+	Text(PostBattleCh1_2CecilAlive)
+	GOTO 1
+LABEL 0
+	MUSC 0x47
+	Text(PostBattleCh1_2CecilDead)
+LABEL 1
+MUSC 0x64
+SetBackground(0x29)
+Text(PostBattleCh1_3)
+FADI 4
+REMOVEALL_BLUE
+REMOVEALL_RED
+REMOVEALL_GREEN
+LOMA Chapter1Cutscene
+LOAD1 0 Ch1EndingCutscene
+ENUN
+EndConvo
+STAL 16
+LOAD1 2 Ch1EndingCutscene_2
+ENUN
+LOAD1 0 Ch1EndingCutscene_3
+ENUN
+STAL 30
+CURSOR Hermes
+STAL 60
+REMOVE_CURSORS
+CHECK_ALIVE Cecil
+BEQ 2 sC s0
+	//Another Cecil check here.
+	SetBackground(0x25)
+	Text(PostBattleCh1_4CecilAlive)
+	GOTO 3
+LABEL 2
+	SetBackground(0x25)
+	Text(PostBattleCh1_4CecilDead)
+	ENUT CecilIsDeadFlag1
+	SetBackground(0x2F)
+	Text(PostBattleCh1_4CecilDead2)
+	ENUT CecilIsDeadFlag2
+LABEL 3
+MUSC 0x0
+FADI 4
+MUSC 0x4C
+SetBackground(0x2E)
+BROWNBOX KalmPalaceBrownBoxText [0,0]
+Text(PostBattleCh1_5)
 EVBIT_F 0x2
 MNTS 0x1 //return to title screen
 NoFade;ENDA

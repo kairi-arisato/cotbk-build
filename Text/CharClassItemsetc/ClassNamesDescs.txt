@@ -21,3 +21,11 @@ Halberdier[X]
 ## HalberdierDesc
 Distinctive spear masters known for[n]
 their deadly, balanced technique. [LanceIcon][X]
+
+## ConquerorName
+Conqueror[X]
+
+## ConquerorDesc
+A user of the Rune of[n]
+Embers who has grown[n]
+uncontrollably powerful.[X]

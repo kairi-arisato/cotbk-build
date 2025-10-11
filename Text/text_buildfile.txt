@@ -130,3 +130,8 @@ a skill when used.[X]
 
 #include "CharClassItemsetc/ClassNamesDescs.txt"
 
+## DebuggerTextOn
+Debugger [ToggleRed]on[ToggleRed].[A][X]
+
+## DebuggerTextOff
+Debugger [ToggleRed]off[ToggleRed][A][X]

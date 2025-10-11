@@ -11,4 +11,21 @@
 //Since the Gary mug has no mouth/eye frames, we can enter whatever here. The background color on the mug is treated as transparent in game.
 //setMugEntry(0x3, GaryPointMug, 0,0,0,0)
 
-setMugEntry(0x2, DianaMug, 4, 6, 4, 4)
+setMugEntry(0x2, NoirMug, 4,5,4,3)
+//put Noir's promoted/timeskip mug here.
+setMugEntry(0x4, ArtemisaMug, 2,5,2,3)
+setMugEntry(0x5, CecilMug, 3,6,3,4)
+setMugEntry(0x6, HermesMug, 3,5,3,3)
+setMugEntry(0x7, MariaMug, 3,6,3,4)
+setMugEntry(0x14, SchwarzeMug, 3,4,3,2)
+//put Schwarze's promoted/timeskip mug here.
+setMugEntry(0x2B, WilliamMug, 4,5,4,3)
+setMugEntry(0x30, VelkaMug, 3,5,3,3)
+setMugEntry(0x46, BlaiseMug, 2,5,2,3)
+setMugEntry(0x4A, ArgentMug, 3,5,3,3)
+setMugEntry(0x4B, RuneVelkaMug, 3,5,3,3)
+setMugEntry(0xAD, AdamMug, 3,5,3,3)
+setMugEntry(0xAE, VertMug, 3,5,3,3)
+setMugEntry(0xAF, WeissMug, 0,0,0,0)
+setMugEntry(0xB0, LilliaMug, 3,5,3,3)
+setMugEntry(0xB1, GilbertMug, 2,6,2,4)

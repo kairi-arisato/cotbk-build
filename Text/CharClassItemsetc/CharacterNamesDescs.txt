@@ -119,3 +119,18 @@ Adam[X]
 The Third King of Kalm and an[n]
 outstanding magic user. His[n]
 father recently passed away.[X]
+
+## ArgentName
+Argent[X]
+
+## ArgentDesc
+A smart and patient Kalmite rider[n]
+married to Aurora. Dutiful to a fault.[X]
+
+## BlaiseName
+Blaise[X]
+
+## BlaiseName
+Noir's mentor, a very dangerous figure[n]
+and gifted tactician, strong in body[n]
+and mind alike. Cares for his men.[A][X]

@@ -53,5 +53,6 @@ WRiderFAnims:
 	AxeAnim(WRiderF_UnarmedAnim)
 	SpecialAnim(WRiderF_HAxeAnim,HandAxe)
 	SpecialAnim(WRiderF_HAxeAnim,Hatchet)
+	SpecialAnim(WRiderF_HAxeAnim,Tomahawk)
 	UnarmedAnim(WRiderF_UnarmedAnim)
 EndAnim

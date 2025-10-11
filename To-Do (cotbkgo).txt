@@ -1,13 +1,13 @@
 To-do - Chapter 1
-	- Set portraits for everyone
+	- Set portraits for everyone (Schwarze, Noir, Maria, Hermes, Cecil, Gilbert, Adam, Lillia, and Vert done)
 	- Set battle animations for everyone
+	- Set up music
+	- set up battle backgrounds
+		- Female Fighter, Cav, Halberdier take priority
 	- Do the eventing for the entire chapter; PRORITIZE GAMEPLAY OVER TEXT
 		- Second phase in progress
 			- Fix the background fading out incorrectly.
-	- FIX THE ENDING EVENT.
-	- Find a way to check if William is in range.
-	- Find a way to remove Avalon EX, Knell Type-II, and Giantsfeller from the player's inventory.
-		- This is a patch in FEBuilder, but I don't know how to import it.
+	- Implement the glossary and augury.
 	
 DONE:
 	- Set battle animations for Schwarze, Noir
@@ -16,3 +16,7 @@ DONE:
 	- Find a way to make "Waiting for current player unit in current position"; make the red screen fade work
 	- Start event done.
 	- Villages done. Global flag that sets Kayleth isn't.
+	- Find a way to remove Avalon EX, Knell Type-II, and Giantsfeller from the player's inventory.
+	- Find a way to check if William is in range.
+	- ENDING EVENT DONE!!!
+	- Scripted battle numbers done
