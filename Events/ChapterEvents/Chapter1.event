@@ -379,9 +379,6 @@ FADI 5
 SetBackground(0x2E)
 BROWNBOX KalmPalaceBrownBoxText [0,0]
 Text(TheRuneofEmbersIsStolen)
-FADI 5
-CLEAN
-FADU 5
 SetBackground(0x1E)
 Text(UmbraGivesVelkaRune)
 SOUN 0xB4
